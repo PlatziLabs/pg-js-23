@@ -1,3 +1,3 @@
 export function sortWords(array) {
-  // Tu código aquí 👈
+  return array.sort((a, b) => a.length - b.length);
 }
