@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { sortWords } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
-  });
-
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return ['a','bb','ccc','dddd']", () => {
+    const array = ['dddd', 'a', 'bb','ccc'];
+    const rta = sortWords(array);
+    expect(rta).toEqual(['a','bb','ccc','dddd']);
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+    const array = [];
+    const rta = sortWords(array);
     expect(rta).toEqual([]);
+  });
+
+  it("should return ['aaa', 'bbb']", () => {
+    const array = ['aaa', 'bbb'];
+    const rta = sortWords(array);
+    expect(rta).toEqual(['aaa', 'bbb']);
   });
 });

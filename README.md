@@ -1,15 +1,25 @@
-En este desafío tienes un array de números, usando la función map debes retornar todos los números del array multiplicados por dos.
+Tienes un array con palabras y tienes que retornar un array ordenado de la palabra con menos caracteres a la palabra con más caracteres.
 
-La solución debería tener un input y output como los siguientes:
+La solución debería funcionar algo similar:
 
 Input
 
 ```js
-solution([2, 4, 5, 6, 8]);
+solution([
+  "Hola",
+  "Viajar",
+  "Sol",
+  "Aprender"
+]);
 ```
 
 Output
 
-```sh
-[4,8,10,12, 16]
+```js
+[
+  "Sol",
+  "Hola",
+  "Viajar",
+  "Aprender"
+]
 ```
